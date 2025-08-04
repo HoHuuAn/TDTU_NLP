@@ -1,0 +1,267 @@
+[
+    {
+        "text": "Patient 345678, seen on March 10, 2021, reported a severe headache.  She's allergic to sulfa drugs.  Received 500mg Acetaminophen. Blood work (drawn March 10th, 2021) showed elevated white blood cells.  Dr. Brown referred her.  Follow up is scheduled for April 10, 2021. Weight: 135 lbs.  Insurance: Medicare (ID: 98765).",
+        "extraction": {
+            "patient_id": 345678,
+            "date_of_visit": "2021-03-10",
+            "allergy_type": "Sulfa drugs",
+            "medication_dosage": [
+                {
+                    "name": "Acetaminophen",
+                    "dosage": "500mg"
+                }
+            ],
+            "lab_test_date": "2021-03-10",
+            "test_results": [
+                {
+                    "name": "White blood cells",
+                    "result": "elevated"
+                }
+            ],
+            "referring_physician": "Dr. Brown",
+            "follow_up_date": "2021-04-10",
+            "patient_weight": "135 lbs",
+            "insurance_information": [
+                {
+                    "provider": "Medicare",
+                    "policy_number": "98765"
+                }
+            ]
+        }
+    },
+    {
+        "text": "The patient, identified as 456789, visited on 4/15/2021 complaining of fatigue.  Known allergy to shellfish. Prescribed Zyrtec 10mg daily.  Comprehensive blood panel performed same day showed normal results. Referral from Dr. Smith. Next appointment: 5/15/2021.  Patient weighs 160 pounds.  Patient uses a Humana plan, policy # 55555.",
+        "extraction": {
+            "patient_id": 456789,
+            "date_of_visit": "2021-04-15",
+            "allergy_type": "Shellfish",
+            "medication_dosage": [
+                {
+                    "name": "Zyrtec",
+                    "dosage": "10mg daily"
+                }
+            ],
+            "lab_test_date": "2021-04-15",
+            "test_results": [
+                {
+                    "name": "Comprehensive blood panel",
+                    "result": "normal"
+                }
+            ],
+            "referring_physician": "Dr. Smith",
+            "follow_up_date": "2021-05-15",
+            "patient_weight": "160 pounds",
+            "insurance_information": [
+                {
+                    "provider": "Humana",
+                    "policy_number": "55555"
+                }
+            ]
+        }
+    },
+    {
+        "text": "Patient #567890.  Date of visit: 2021-05-20. Presents with a rash.  Allergic to bee stings.  Amoxicillin 250mg twice daily prescribed.  Urinalysis performed 2021-05-20; results normal.  Referred by Dr. Jones.  Return visit scheduled June 20th, 2021.  Patient weight: 120 lbs.  Insurance: Kaiser Permanente (member ID: 11111).",
+        "extraction": {
+            "patient_id": 567890,
+            "date_of_visit": "2021-05-20",
+            "allergy_type": "Bee stings",
+            "medication_dosage": [
+                {
+                    "name": "Amoxicillin",
+                    "dosage": "250mg twice daily"
+                }
+            ],
+            "lab_test_date": "2021-05-20",
+            "test_results": [
+                {
+                    "name": "Urinalysis",
+                    "result": "normal"
+                }
+            ],
+            "referring_physician": "Dr. Jones",
+            "follow_up_date": "2021-06-20",
+            "patient_weight": "120 lbs",
+            "insurance_information": [
+                {
+                    "provider": "Kaiser Permanente",
+                    "policy_number": "11111"
+                }
+            ]
+        }
+    },
+    {
+        "text": "A 65-year-old male (Patient ID: 678901) was seen on June 1st, 2021, with complaints of nausea.  No known allergies.  Prescribed Ondansetron 8mg as needed.  CBC drawn on 6/1/2021 showed no abnormalities.  Self-referral.  Next appointment in two weeks.  Weight: 175 lbs.  No insurance provided.",
+        "extraction": {
+            "patient_id": 678901,
+            "date_of_visit": "2021-06-01",
+            "allergy_type": "None",
+            "medication_dosage": [
+                {
+                    "name": "Ondansetron",
+                    "dosage": "8mg as needed"
+                }
+            ],
+            "lab_test_date": "2021-06-01",
+            "test_results": [
+                {
+                    "name": "CBC",
+                    "result": "no abnormalities"
+                }
+            ],
+            "referring_physician": "Self-referral",
+            "follow_up_date": "2021-06-15",
+            "patient_weight": "175 lbs",
+            "insurance_information": []
+        }
+    },
+    {
+        "text": "Patient 789012.  Visit: July 5th, 2021.  Reason:  Cough and fever.  Allergy to aspirin.  Medication:  Tylenol 325mg every 4-6 hours.  Chest x-ray on 7/5/2021: clear.  Referring Physician: Dr. Williams.  Follow-up: July 12th, 2021. Weight: 200 lbs.  Private pay.",
+        "extraction": {
+            "patient_id": 789012,
+            "date_of_visit": "2021-07-05",
+            "allergy_type": "Aspirin",
+            "medication_dosage": [
+                {
+                    "name": "Tylenol",
+                    "dosage": "325mg every 4-6 hours"
+                }
+            ],
+            "lab_test_date": "2021-07-05",
+            "test_results": [
+                {
+                    "name": "Chest x-ray",
+                    "result": "clear"
+                }
+            ],
+            "referring_physician": "Dr. Williams",
+            "follow_up_date": "2021-07-12",
+            "patient_weight": "200 lbs",
+            "insurance_information": []
+        }
+    },
+    {
+        "text": "On August 10, 2021, patient 890123 was seen for a routine checkup.  No allergies listed.  No medications prescribed.  No tests conducted.  No referral.  Next appointment in 6 months. Weight: 140 lbs.  Insurance:  UnitedHealthcare policy # 77777.",
+        "extraction": {
+            "patient_id": 890123,
+            "date_of_visit": "2021-08-10",
+            "allergy_type": "None",
+            "medication_dosage": [],
+            "lab_test_date": null,
+            "test_results": [],
+            "referring_physician": null,
+            "follow_up_date": "2022-02-10",
+            "patient_weight": "140 lbs",
+            "insurance_information": [
+                {
+                    "provider": "UnitedHealthcare",
+                    "policy_number": "77777"
+                }
+            ]
+        }
+    },
+    {
+        "text": "Patient 901234 presented on 9/15/2021 with flu-like symptoms.  Allergic to codeine.  Given rest and fluids.  Influenza test performed same day; positive.  Dr. Garcia referred him.  Follow-up in one week. Weight: 190 lbs.  Medicaid (ID: 88888).",
+        "extraction": {
+            "patient_id": 901234,
+            "date_of_visit": "2021-09-15",
+            "allergy_type": "Codeine",
+            "medication_dosage": [],
+            "lab_test_date": "2021-09-15",
+            "test_results": [
+                {
+                    "name": "Influenza test",
+                    "result": "positive"
+                }
+            ],
+            "referring_physician": "Dr. Garcia",
+            "follow_up_date": "2021-09-22",
+            "patient_weight": "190 lbs",
+            "insurance_information": [
+                {
+                    "provider": "Medicaid",
+                    "policy_number": "88888"
+                }
+            ]
+        }
+    },
+    {
+        "text": "The patient (ID: 012345) had a scheduled visit on October 26, 2021, for an annual physical.  No allergies reported.  No new medications.  Basic metabolic panel completed; within normal range.  Self referral.  Next check-up in one year.  Weight: 155 lbs.  Anthem Blue Cross (member ID: 99999).",
+        "extraction": {
+            "patient_id": 12345,
+            "date_of_visit": "2021-10-26",
+            "allergy_type": "None",
+            "medication_dosage": [],
+            "lab_test_date": "2021-10-26",
+            "test_results": [
+                {
+                    "name": "Basic metabolic panel",
+                    "result": "within normal range"
+                }
+            ],
+            "referring_physician": "Self referral",
+            "follow_up_date": "2022-10-26",
+            "patient_weight": "155 lbs",
+            "insurance_information": [
+                {
+                    "provider": "Anthem Blue Cross",
+                    "policy_number": "99999"
+                }
+            ]
+        }
+    },
+    {
+        "text": "Patient 101010 was seen November 20, 2021 for a broken arm.  Allergic to latex.  Received pain medication.  X-ray performed 11/20/2021 showed fracture.  Dr. Lee was the referring physician.  Follow-up appointment is set for December 10th, 2021. Weight: 170 lbs. No insurance information provided.",
+        "extraction": {
+            "patient_id": 101010,
+            "date_of_visit": "2021-11-20",
+            "allergy_type": "Latex",
+            "medication_dosage": [
+                {
+                    "name": "Pain medication",
+                    "dosage": null
+                }
+            ],
+            "lab_test_date": "2021-11-20",
+            "test_results": [
+                {
+                    "name": "X-ray",
+                    "result": "showed fracture"
+                }
+            ],
+            "referring_physician": "Dr. Lee",
+            "follow_up_date": "2021-12-10",
+            "patient_weight": "170 lbs",
+            "insurance_information": []
+        }
+    },
+    {
+        "text": "December 1st, 2021:  Patient 111111.  Chief complaint:  Sore throat.  Allergic to amoxicillin.  Prescribed azithromycin 250mg once daily for 5 days.  Rapid strep test: positive.  Dr. Johnson referred the patient.  Next appointment: December 8th, 2021. Weight: 165 lbs.  Cigna (policy # 00000).",
+        "extraction": {
+            "patient_id": 111111,
+            "date_of_visit": "2021-12-01",
+            "allergy_type": "Amoxicillin",
+            "medication_dosage": [
+                {
+                    "name": "Azithromycin",
+                    "dosage": "250mg once daily for 5 days"
+                }
+            ],
+            "lab_test_date": "2021-12-01",
+            "test_results": [
+                {
+                    "name": "Rapid strep test",
+                    "result": "positive"
+                }
+            ],
+            "referring_physician": "Dr. Johnson",
+            "follow_up_date": "2021-12-08",
+            "patient_weight": "165 lbs",
+            "insurance_information": [
+                {
+                    "provider": "Cigna",
+                    "policy_number": "00000"
+                }
+            ]
+        }
+    }
+]

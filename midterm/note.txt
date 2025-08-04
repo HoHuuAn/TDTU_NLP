@@ -1,0 +1,46 @@
+
+TfidfVectorizer vs DictVectorizer:
+TfidfVectorizer:
+    + văn bản (text data)
+    + Tính toán trọng số TF-IDF (Term Frequency-Inverse Document Frequency) cho từng từ
+    + Tự động thực hiện tokenization và ma trận sparse
+
+DictVectorizer:
+    + dictionary hoặc categorical
+    + cặp key-value => vector đặc trưng
+    + categorical thành one-hot encoding
+    + mặt tính toán đơn giản > TfidfVectorizer
+    
+Về thời gian xử lý:
+    DictVectorizer  nhanh hơn vì chỉ đơn giản chuyển đổi các cặp key-value thành vector
+    TfidfVectorizer tốn nhiều thời gian xử lý hơn do phải:
+        Tokenize văn bản
+        Tính toán TF-IDF scores
+        Xử lý nhiều tham số phức tạp        
+
+Về bộ nhớ:
+    DictVectorizer thường tiết kiệm bộ nhớ hơn vì:
+        Tạo ra ma trận sparse đơn giản
+        ko cần lưu trữ từ điển phức tạp
+    TfidfVectorizer có thể tốn nhiều bộ nhớ hơn do:
+        Phải lưu trữ từ điển các terms
+        Ma trận TF-IDF thường lớn và sparse
+        Cần không gian để lưu các tham số và trọng số
+
+        
+        - giải thích tại sao sử dụng F1_score weighted
+
+F1_score cân bằng recall vs precision
+
++ accuracy: một số loại xuất hiện > khác 
+            -> predict đúng loại phổ biến >< bỏ qua lớp ít gặp 
+            --> accuracy vẫn cao >< model ko thực hiện tốt nhận dạng loại
+            
++ ROC-AUC --> binary
+    solution: one-vs-rest --> giảm độ chính xác của đánh giá mô hình vì ko phản ánh đẩy đủ các mối quan hệ giữa các lớp
+
+
+micro: Tính toán hiệu suất tổng thể, không phân biệt lớp.
+macro: Trung bình cộng không trọng số, mọi lớp đều có tầm quan trọng như nhau.
+weighted: Trung bình có trọng số theo số lượng mẫu trong mỗi lớp, phản ánh sự phân bố lớp.
+binary: Tính toán cho bài toán phân loại nhị phân, chỉ xem xét lớp dương.

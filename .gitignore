@@ -1,2 +1,11 @@
 *.zip
 *.pkl
+midterm/data/*
+midterm/models/*
+final/Question1/*.h5
+final/Question1/Data/*
+final/Question2/Medical_Data/train.json
+final/Question2/Medical_Data/val.json
+final/Question2/Medical_Data/test.json
+final/Question2/Green_House/Data/*json
+*.h5
